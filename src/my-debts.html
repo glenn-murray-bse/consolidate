@@ -1,0 +1,35 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/paper-input/paper-input.html">
+<link rel="import" href="../bower_components/iron-list/iron-list.html">
+<link rel="import" href="../bower_components/iron-input/iron-input.html">
+
+<dom-module id="my-debts">
+
+  <!-- Defines the element's style and local DOM -->
+  <template>
+    <style>
+      :host {
+        display: block;
+        padding: 16px;
+      }
+    </style>
+    <h1>Outstanding Debts</h1>
+    <template is="dom-repeat" items={{debts}}>
+        <div>Amount: $[[item.remaining]]</div>
+        <paper-input as="iron-input" value="{{item.remaining::input}}" label="outstanding debt" type="number" step="0.01" min="0.01">
+          <div prefix>$</div>
+        </paper-input>
+    </template>
+  </template>
+
+  <!-- Creates the element's prototype and registers it -->
+  <script>
+    Polymer({
+      is: 'my-debts',
+      ready: function() {
+        this.debts = [{remaining: 20.00}];
+      }
+    });
+  </script>
+
+</dom-module>

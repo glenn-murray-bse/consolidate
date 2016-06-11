@@ -1,0 +1,968 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"desc",
+				"descendants"
+			],
+			[
+				"E",
+				"E"
+			],
+			[
+				"xml",
+				"xml-	xmlread(..)"
+			],
+			[
+				"and",
+				"and"
+			],
+			[
+				"do",
+				"do"
+			],
+			[
+				"message",
+				"message"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 104.0,
+		"last_filter": "json",
+		"selected_items":
+		[
+			[
+				"json",
+				"JSON Reindent: reindent file or selection"
+			],
+			[
+				"packa in",
+				"Package Control: Install Package"
+			],
+			[
+				"q",
+				"ChangeQuotes"
+			],
+			[
+				"lint",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"packag ins",
+				"Package Control: Install Package"
+			],
+			[
+				"remove pa",
+				"Package Control: Remove Package"
+			],
+			[
+				"upgrade ",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"package ",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"jshint",
+				"JSHint"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"package instal",
+				"Package Control: Install Package"
+			],
+			[
+				"user",
+				"Preferences: Settings - User"
+			],
+			[
+				"inde",
+				"Preferences: Settings - Default"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 416.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/consolidate"
+	],
+	"file_history":
+	[
+		"/C/Users/GlennFrancis/work/spa/server/modules/server.js",
+		"/C/Users/GlennFrancis/work/spa/server/server.js",
+		"/C/Program Files (x86)/Nodist/bin/node_modules/npm/bin/npm-cli.js",
+		"/C/Users/GlennFrancis/work/sreams/spa/package.json",
+		"/C/Users/GlennFrancis/work/spa/server/config/credentials/development.js",
+		"/C/Users/GlennFrancis/work/spa/server/pm2.json",
+		"/C/Users/GlennFrancis/work/spa/server/package.json",
+		"/C/Users/GlennFrancis/work/client/package.json",
+		"/C/Users/GlennFrancis/work/server/package.json",
+		"/C/Users/GlennFrancis/edce-client/last.json",
+		"/C/Users/GlennFrancis/work/client/js/controllers/createcontinuum.js",
+		"/C/Users/GlennFrancis/work/client/web/createcontinuum.html",
+		"/C/Users/GlennFrancis/work/client/spec/unit/undoableDelete.spec.js",
+		"/C/Users/GlennFrancis/work/client/web/reporter.html",
+		"/C/Users/GlennFrancis/work/client/testing/tests/standard/analysis.js",
+		"/C/Users/GlennFrancis/work/client/spec/unit/spaTableDirective.spec.js",
+		"/C/Users/GlennFrancis/work/client/testing/tests/importer/importStudents.js",
+		"/C/Users/GlennFrancis/work/client/js/controllers/UploadStudentsCtrl.js",
+		"/C/Users/GlennFrancis/work/server/test/mocha.opts",
+		"/C/Users/GlennFrancis/work/client/testing/conf.js",
+		"/C/Users/GlennFrancis/work/client/js/services/FileImportService.js",
+		"/C/Users/GlennFrancis/work/client/testing/pages/maintUsersPageObject.js",
+		"/C/Users/GlennFrancis/work/client/testing/pages/maintLicencesPageObject.js",
+		"/C/Users/GlennFrancis/work/server/config/environment/production.js",
+		"/C/Users/GlennFrancis/work/server/migrations/addFullSearch.js",
+		"/C/Users/GlennFrancis/work/server/server.js",
+		"/C/Users/GlennFrancis/work/server/modules/version.js",
+		"/C/Users/GlennFrancis/work/server/test-runner.sh",
+		"/C/Users/GlennFrancis/work/client/js/controllers/markassessment.js",
+		"/C/Users/GlennFrancis/work/client/js/controllers/assessmentAnalysisCtrl.js",
+		"/C/Users/GlennFrancis/work/server/modules/utils.js",
+		"/C/Users/GlennFrancis/work/client/js/controllers/showzpd.js",
+		"/C/Users/GlennFrancis/work/client/dist/public/web/markassessment.html",
+		"/C/Users/GlennFrancis/work/client/testing/tests/students/create.js",
+		"/C/Users/GlennFrancis/work/client/testing/pages/sideMenuPartial.js",
+		"/C/Users/GlennFrancis/work/server/node_modules/pm2/env.js",
+		"/C/Users/GlennFrancis/work/client/testing/scripts/env.js",
+		"/C/Users/GlennFrancis/work/client/web/standard/uploadResults.html",
+		"/C/Users/GlennFrancis/work/client/web/upload-students.html",
+		"/C/Users/GlennFrancis/work/client/js/base.js",
+		"/C/Users/GlennFrancis/work/client/testing/scripts/user.js",
+		"/C/Users/GlennFrancis/work/server/config/environment/development.js",
+		"/C/Users/GlennFrancis/work/server/test/integration/purchase-test.js",
+		"/C/Users/GlennFrancis/work/client/web/assessmentanalysis.html",
+		"/C/Users/GlennFrancis/work/client/web/markbook/_studentGrowthGraph.html",
+		"/C/Users/GlennFrancis/work/client/web/markbook-dashboard.html",
+		"/C/Users/GlennFrancis/work/client/js/controllers/markbookDashboardCtrl.js",
+		"/C/Users/GlennFrancis/work/client/bower.json",
+		"/C/Users/GlennFrancis/work/client/js/directives/spaTable.js",
+		"/C/Users/GlennFrancis/work/client/js/directives/activity.js",
+		"/C/Users/GlennFrancis/work/server/test/unit/version-test.js",
+		"/C/Users/GlennFrancis/work/server/test/integration/server-test.js",
+		"/C/Users/GlennFrancis/work/client/test/karma.conf.js",
+		"/C/Users/GlennFrancis/work/client/spec/unit/uploadStudentsCtrl.spec.js",
+		"/C/Users/GlennFrancis/work/server/config/environment/staging.js",
+		"/C/Users/GlennFrancis/work/client/js/services/Util.js",
+		"/C/Users/GlennFrancis/work/client/web/showzpd.html",
+		"/C/Python27/Tools/Scripts/setup.py",
+		"/C/Users/GlennFrancis/work/client/js/services/SpaHighchartsConfigFactory.js",
+		"/C/Users/GlennFrancis/work/client/js/directives/studentGrowthGraph.js",
+		"/C/Users/GlennFrancis/work/client/spec/karma.conf.js",
+		"/C/Users/GlennFrancis/work/client/node_modules/chai-jquery/chai-jquery.js",
+		"/C/Users/GlennFrancis/work/server/test/mocks/xero-contact.js",
+		"/C/Users/GlennFrancis/work/client/spec/.jshintrc",
+		"/C/Users/GlennFrancis/work/client/testing/pages/importStudentPageObject.js",
+		"/C/Users/GlennFrancis/work/server/test/integration/version-test.js",
+		"/C/Users/GlennFrancis/work/client/js/directives/spaCustomHCPrint.js",
+		"/C/Users/GlennFrancis/work/client/testing/tests/selectors/student.js",
+		"/C/Users/GlennFrancis/work/client/testing/tests/selectors/context.js",
+		"/C/Users/GlennFrancis/work/client/testing/tests/purchase/teacher.js",
+		"/C/Users/GlennFrancis/work/client/testing/tests/purchase/school.js",
+		"/C/Users/GlennFrancis/work/client/testing/tests/profile/edit.js",
+		"/C/Users/GlennFrancis/work/client/testing/tests/markbook/continuum.js",
+		"/C/Users/GlennFrancis/work/client/testing/tests/maintain/users.js",
+		"/C/Users/GlennFrancis/work/client/testing/tests/maintain/licences.js",
+		"/C/Users/GlennFrancis/work/client/testing/tests/maintain/addLicences.js",
+		"/C/Users/GlennFrancis/work/client/testing/tests/login/forward.js",
+		"/C/Users/GlennFrancis/work/client/conf.js",
+		"/C/Users/GlennFrancis/work/client/.jshintrc",
+		"/C/Users/GlennFrancis/work/client/testing/pages/maintStudentPageObject.js",
+		"/C/Users/GlennFrancis/work/server/pm2.json",
+		"/C/Users/GlennFrancis/work/client/js/controllers/MaintainLicencesController.js",
+		"/C/Users/GlennFrancis/work/client/js/services/MaintSecurity.js",
+		"/C/Users/GlennFrancis/work/server/modules/admin.js",
+		"/C/Users/GlennFrancis/work/server/modules/menu.js",
+		"/C/Users/GlennFrancis/work/server/modules/organizations.js",
+		"/C/Users/GlennFrancis/work/server/modules/contexts.js",
+		"/C/Users/GlennFrancis/work/server/modules/results.js",
+		"/C/Users/GlennFrancis/work/server/modules/user.js",
+		"/C/Users/GlennFrancis/work/server/modules/purchase.js",
+		"/C/xampp2/apache/conf/httpd.conf",
+		"/C/Users/GlennFrancis/work/server/conf/httpd.conf",
+		"/C/Users/GlennFrancis/Code/xero/package.json",
+		"/C/Users/GlennFrancis/Code/xero/index.js",
+		"/C/Users/GlennFrancis/Code/xero/test/mocks/xero.js",
+		"/C/Users/GlennFrancis/Code/xero/test/invoices-tests.js",
+		"/C/Users/GlennFrancis/Code/xero/src/invoices.js",
+		"/D/Origin Games/Dragon Age Inquisition/Bonus/Soundtrack/meta.dat",
+		"/C/Users/GlennFrancis/.ssh/id_rsa.pub",
+		"/C/Users/GlennFrancis/yak/.jshintrc",
+		"/D/SteamLibrary/SteamApps/common/Planetary Annihilation/media/ui/mods/ui_mod_list.js",
+		"/D/SteamLibrary/SteamApps/common/Planetary Annihilation/media/pa/units/land/unit_cannon/unit_cannon_tool_weapon.json",
+		"/D/SteamLibrary/SteamApps/common/Planetary Annihilation/media/pa/units/land/unit_cannon/unit_cannon_deploy.json",
+		"/C/Users/GlennFrancis/yak/index.js",
+		"/C/Users/GlennFrancis/yak/main.js",
+		"/D/SteamLibrary/SteamApps/common/Planetary Annihilation/media/pa/units/land/unit_cannon/unit_cannon.json",
+		"/C/Users/GlennFrancis/yak/package.json",
+		"/C/Users/GlennFrancis/yak/spec/main.js",
+		"/C/Users/GlennFrancis/yak/spec/main.yak",
+		"/C/Users/GlennFrancis/AppData/Roaming/Sublime Text 3/Packages/Git/Git.sublime-settings",
+		"/C/Users/GlennFrancis/AppData/Roaming/Sublime Text 3/Packages/User/Git.sublime-settings",
+		"/C/Users/GlennFrancis/work/spa-platform-backend/Gruntfile.js",
+		"/C/Users/GlennFrancis/work/spa-platform-backend/file.js",
+		"/C/Users/GlennFrancis/Code/shoes4/shoes-dsl.gemspec",
+		"/C/Users/GlennFrancis/Code/shoes4/shoes.gemspec",
+		"/C/Users/GlennFrancis/Code/shoes4/tasks/sample.rb",
+		"/C/Users/GlennFrancis/Code/shoes4/bin/shoes.bat",
+		"/C/Users/GlennFrancis/Downloads/npm-shrinkwrap.json",
+		"/E/txt.gpg",
+		"/C/Users/GlennFrancis/Code/shoes4/bin/ruby-shoes",
+		"/C/Users/GlennFrancis/Code/shoes4/ext/install/Rakefile",
+		"/C/Users/GlennFrancis/Desktop/add.txt.gpg",
+		"/C/Users/GlennFrancis/Code/myob/payslip.js",
+		"/C/Users/GlennFrancis/Code/myob/index.html",
+		"/C/Users/GlennFrancis/Desktop/add.txt.asc",
+		"/C/Users/GlennFrancis/Code/react-blog/lib/main.js",
+		"/C/Users/GlennFrancis/Code/react-blog/index.js",
+		"/C/Users/GlennFrancis/Code/react-blog/view/index.jsx"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"C:\\Users\\GlennFrancis\\work\\client\\web",
+			"C:\\Users\\GlennFrancis\\work\\client\\",
+			"C:\\Users\\GlennFrancis\\work\\client\\spec",
+			"C:\\Users\\GlennFrancis\\work\\client\\test",
+			"C:\\Users\\GlennFrancis\\work\\client\\js",
+			"C:\\Users\\GlennFrancis\\work\\client",
+			"C:\\Users\\GlennFrancis\\work\\client\\spec",
+			"C:\\Users\\GlennFrancis\\work\\client\\testing",
+			"C:\\Users\\GlennFrancis\\work\\server",
+			"C:\\Users\\GlennFrancis\\work\\client",
+			"C:\\Users\\GlennFrancis\\work\\server",
+			"C:\\Users\\GlennFrancis\\Code\\shoes4",
+			"C:\\Users\\GlennFrancis\\Code\\react-blog",
+			"C:\\Users\\GlennFrancis\\Code\\react",
+			"C:\\Users\\GlennFrancis\\Desktop\\HelloOpenGLES10",
+			"C:\\Users\\GlennFrancis\\Code"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"time",
+			"purge",
+			"item",
+			"capitalise",
+			"getCapitalisedVerb",
+			"getTopItemName",
+			".length",
+			"undoable-delete",
+			"cache",
+			"get(",
+			"spa-custom-button=\"EDIT\"",
+			"yAxis",
+			"graph",
+			"<table",
+			"this.element",
+			"this.html",
+			"table",
+			"config",
+			"config =",
+			"studentResults",
+			"selection(",
+			"number(",
+			"function number",
+			"Invalid upload",
+			"throw ",
+			"chai",
+			"SPAActivity",
+			"/backend/session",
+			"backend/session",
+			"activity",
+			"ping",
+			"spec",
+			"uploadStudentsCtrl",
+			"uploadStudentsCtrl.spec",
+			"config",
+			"chart",
+			"highchart",
+			"highcharts",
+			"ng-show",
+			"growthConfig",
+			"tick",
+			"tickInterva",
+			"student-growth",
+			"save(",
+			"firstname",
+			"mocha-clean",
+			"ping ",
+			"processSheets",
+			"processShe",
+			"watch('se",
+			"$watch",
+			";\n",
+			"processSheets",
+			"process",
+			"iles",
+			"fileChanged",
+			"overrides",
+			"Invalid He",
+			"should bind",
+			"overrides",
+			"overrides=",
+			"fields",
+			"GetColumnsFromFields",
+			"setFields",
+			"FileImportService",
+			"generateCohorts",
+			"browser.pause()",
+			"options",
+			"override for override in rawData()[1]",
+			"only",
+			"studentObj",
+			"beforeAll",
+			"only",
+			"browser.get",
+			"protractor",
+			"no-more-",
+			"<select",
+			"panel-body",
+			"FILES",
+			"Invalid headi",
+			"importButton",
+			"headings",
+			"select",
+			"purchaseIsActive",
+			"purchaseIsExpired",
+			"organizations')",
+			"organization')",
+			"organization\")",
+			"require('organization')",
+			"organization.delete",
+			"orgs.delete",
+			"org.delete",
+			"org/delete",
+			"unable to fetch students for cohort",
+			"handleError",
+			"reduce",
+			"createContext",
+			"constructDefaultCohort",
+			"constructContext",
+			"constructOrg",
+			"contexts.",
+			"orgs.",
+			"tooFarFuture",
+			"C:/xampp22",
+			"C:/xampp",
+			"spa",
+			"tooFarFuture",
+			"callback",
+			"moment",
+			"xml",
+			"root",
+			"XERO_API_URL",
+			"output_format",
+			"inflect",
+			"x",
+			"link-container ",
+			"run_sample",
+			"run_samples",
+			":random",
+			"samples:random",
+			"shoes/ui/cli",
+			"ext",
+			"shoes.bat",
+			"\n	",
+			"foo",
+			"inputs",
+			"foo",
+			"inputs"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"element",
+			"html",
+			"C:/xampp2",
+			"'WEST'",
+			"'EAST'",
+			"'SOUTH'",
+			"'NORTH'"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 25.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "consolidate.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"pm2",
+				"pm2.json"
+			],
+			[
+				"",
+				"config\\credentials\\development.js"
+			],
+			[
+				"deve",
+				"config\\credentials\\development.js"
+			],
+			[
+				"modser",
+				"modules\\server.js"
+			],
+			[
+				"server.js",
+				"server.js"
+			],
+			[
+				"develop",
+				"config\\credentials\\development.js"
+			],
+			[
+				"pac",
+				"package.json"
+			],
+			[
+				"pack",
+				"server\\package.json"
+			],
+			[
+				"reportsersp",
+				"client\\spec\\unit\\ReportService.spec.js"
+			],
+			[
+				"reportser",
+				"client\\js\\services\\ReportService.js"
+			],
+			[
+				"reporse",
+				"client\\spec\\unit\\ReportService.spec.js"
+			],
+			[
+				"reprotser",
+				"client\\js\\services\\ReportService.js"
+			],
+			[
+				"reportco",
+				"client\\js\\controllers\\ReporterController.js"
+			],
+			[
+				"createcontin",
+				"client\\js\\controllers\\createcontinuum.js"
+			],
+			[
+				"createcon",
+				"client\\web\\createcontinuum.html"
+			],
+			[
+				"reporcon",
+				"client\\js\\controllers\\ReporterController.js"
+			],
+			[
+				"undoable",
+				"client\\spec\\unit\\undoableDelete.spec.js"
+			],
+			[
+				"undo",
+				"client\\js\\directives\\undoableDelete.js"
+			],
+			[
+				"superuseror",
+				"client\\web\\superuser-organisation.html"
+			],
+			[
+				"reporco",
+				"client\\js\\controllers\\ReporterController.js"
+			],
+			[
+				"reporter",
+				"client\\web\\reporter.html"
+			],
+			[
+				"write",
+				"client\\web\\reporter\\write.html"
+			],
+			[
+				"reportemplatefa",
+				"client\\js\\services\\ReportTemplateFactory.js"
+			],
+			[
+				"reporjs",
+				"client\\js\\controllers\\ReporterController.js"
+			],
+			[
+				"reporterh",
+				"client\\web\\reporter.html"
+			],
+			[
+				"spatabledirecspe",
+				"client\\spec\\unit\\spaTableDirective.spec.js"
+			],
+			[
+				"testanana",
+				"client\\testing\\tests\\standard\\analysis.js"
+			],
+			[
+				"studeng",
+				"client\\js\\directives\\studentGrowthGraph.js"
+			],
+			[
+				"studengrow",
+				"client\\web\\markbook\\_studentGrowthGraph.html"
+			],
+			[
+				"uti",
+				"client\\js\\services\\Util.js"
+			],
+			[
+				"util",
+				"server\\modules\\utils.js"
+			],
+			[
+				"studengr",
+				"client\\js\\directives\\studentGrowthGraph.js"
+			],
+			[
+				"assanal",
+				"client\\web\\assessmentanalysis.html"
+			],
+			[
+				"spatab",
+				"client\\js\\directives\\spaTable.js"
+			],
+			[
+				"tabl",
+				"client\\spec\\unit\\spaTableDirective.spec.js"
+			],
+			[
+				"markbodas",
+				"client\\js\\controllers\\markbookDashboardCtrl.js"
+			],
+			[
+				"showzp",
+				"client\\web\\showzpd.html"
+			],
+			[
+				"showzpd",
+				"client\\js\\controllers\\showzpd.js"
+			],
+			[
+				"spahighc",
+				"client\\js\\services\\SpaHighchartsConfigFactory.js"
+			],
+			[
+				"studentgro",
+				"client\\js\\directives\\studentGrowthGraph.js"
+			],
+			[
+				"mockxeroco",
+				"server\\test\\mocks\\xero-contact.js"
+			],
+			[
+				"integpurch",
+				"server\\test\\integration\\purchase-test.js"
+			],
+			[
+				"devel",
+				"server\\config\\environment\\development.js"
+			],
+			[
+				"spatabl",
+				"client\\js\\directives\\spaTable.js"
+			],
+			[
+				"table",
+				"client\\spec\\unit\\spaTableDirective.spec.js"
+			],
+			[
+				"tablespec",
+				"client\\spec\\unit\\spaTableDirective.spec.js"
+			],
+			[
+				"karma",
+				"client\\spec\\karma.conf.js"
+			],
+			[
+				"chai-",
+				"client\\node_modules\\chai-jquery\\chai-jquery.js"
+			],
+			[
+				"bower",
+				"client\\bower.json"
+			],
+			[
+				"karm",
+				"client\\spec\\karma.conf.js"
+			],
+			[
+				"spatable",
+				"client\\spec\\unit\\spaTableDirective.spec.js"
+			],
+			[
+				"spata",
+				"client\\js\\directives\\spaTable.js"
+			],
+			[
+				"growthgra",
+				"client\\web\\markbook\\_studentGrowthGraph.html"
+			],
+			[
+				"activi",
+				"client\\js\\directives\\activity.js"
+			],
+			[
+				"activit",
+				"client\\js\\directives\\activity.js"
+			],
+			[
+				"karma.conf",
+				"client\\spec\\karma.conf.js"
+			],
+			[
+				"karma.co",
+				"client\\test\\karma.conf.js"
+			],
+			[
+				"packa",
+				"server\\package.json"
+			],
+			[
+				"vers",
+				"server\\modules\\version.js"
+			],
+			[
+				"spacust",
+				"client\\js\\directives\\spaCustomHCPrint.js"
+			],
+			[
+				"studentgow",
+				"client\\web\\markbook\\_studentGrowthGraph.html"
+			],
+			[
+				"assan",
+				"client\\js\\controllers\\assessmentAnalysisCtrl.js"
+			],
+			[
+				"assess",
+				"client\\web\\assessmentanalysis.html"
+			],
+			[
+				"studentg",
+				"client\\js\\directives\\studentGrowthGraph.js"
+			],
+			[
+				"markass",
+				"client\\dist\\public\\web\\markassessment.html"
+			],
+			[
+				"ser",
+				"server\\server.js"
+			],
+			[
+				"prod",
+				"server\\config\\environment\\production.js"
+			],
+			[
+				"test-runn",
+				"server\\test-runner.sh"
+			],
+			[
+				"conf.",
+				"client\\testing\\conf.js"
+			],
+			[
+				"conf.j",
+				"client\\conf.js"
+			],
+			[
+				"uploadst",
+				"client\\js\\controllers\\UploadStudentsCtrl.js"
+			],
+			[
+				"fileimpor",
+				"client\\js\\services\\FileImportService.js"
+			],
+			[
+				"importst",
+				"client\\testing\\tests\\importer\\importStudents.js"
+			],
+			[
+				"upload-",
+				"client\\web\\upload-students.html"
+			],
+			[
+				"env",
+				"client\\testing\\scripts\\env.js"
+			],
+			[
+				"uploadstu",
+				"client\\web\\upload-students.html"
+			],
+			[
+				"uploadres",
+				"C:\\Users\\GlennFrancis\\work\\client\\web\\standard\\uploadResults.html"
+			],
+			[
+				"bas",
+				"client\\js\\base.js"
+			],
+			[
+				"stag",
+				"server\\config\\environment\\staging.js"
+			],
+			[
+				"menu",
+				"server\\modules\\menu.js"
+			],
+			[
+				"serveradmin",
+				"server\\modules\\admin.js"
+			],
+			[
+				"maintsec",
+				"client\\js\\services\\MaintSecurity.js"
+			],
+			[
+				"maintlice",
+				"client\\js\\controllers\\MaintainLicencesController.js"
+			],
+			[
+				"orga",
+				"server\\modules\\organizations.js"
+			],
+			[
+				"serv",
+				"server\\server.js"
+			],
+			[
+				"utils",
+				"server\\modules\\utils.js"
+			],
+			[
+				"resul",
+				"server\\modules\\results.js"
+			],
+			[
+				"sta",
+				"server\\config\\environment\\staging.js"
+			],
+			[
+				"purcha",
+				"server\\modules\\purchase.js"
+			],
+			[
+				"contex",
+				"server\\modules\\contexts.js"
+			],
+			[
+				"context",
+				"server\\modules\\contexts.js"
+			],
+			[
+				"purch",
+				"server\\modules\\purchase.js"
+			],
+			[
+				"upload",
+				"client\\web\\upload-students.html"
+			],
+			[
+				"staging",
+				"server\\config\\environment\\staging.js"
+			],
+			[
+				"httpd.",
+				"server\\conf\\httpd.conf"
+			],
+			[
+				"stagin",
+				"server\\config\\environment\\staging.js"
+			],
+			[
+				"user",
+				"palindrome\\routes\\user.js"
+			],
+			[
+				"sche",
+				"railstest\\db\\schema.rb"
+			],
+			[
+				"lock",
+				"railstest\\Gemfile.lock"
+			],
+			[
+				"gem",
+				"predictionbook\\Gemfile"
+			],
+			[
+				"gemf",
+				"predictionbook\\Gemfile"
+			],
+			[
+				"gemloc",
+				"predictionbook\\Gemfile.lock"
+			],
+			[
+				"mochaop",
+				"test\\mocha.opts"
+			],
+			[
+				"spars",
+				"sparse.coffee"
+			],
+			[
+				"index",
+				"index.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 285.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
