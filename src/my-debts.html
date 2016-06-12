@@ -15,11 +15,14 @@
     </style>
     <h1>Outstanding Debts</h1>
     <template is="dom-repeat" items={{debts}} as="debt">
+        <div>Name: [[debt.name]]</div>
         <div>Amount: $[[debt.remaining]]</div>
-        <paper-input is="iron-input" value="{{debt.remaining::input}}" label="outstanding debt (in dollars)" type="number" step="0.01" min="0.01">
+        <paper-input is="iron-input" value="{{debt.name::change}}" label="name" type="text">
+        </paper-input>
+        <paper-input is="iron-input" value="{{debt.remaining::change}}" label="outstanding debt (in dollars)" type="number" step="0.01" min="0.01">
           <div prefix>$&nbsp;</div>
         </paper-input>
-        <button on-click="more">Details</button>
+        <button on-click="details">Details</button>
         <button on-click="order">Remove</button>
     </template>
     <div>
@@ -44,6 +47,7 @@
         console.log(e);
         console.log(this.debts);
         this.push('debts', {
+          name: '',
           remaining: 0.00
         });
       }
