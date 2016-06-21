@@ -13,7 +13,7 @@
         padding: 16px;
       }
     </style>
-    <h1>Outstanding Debts</h1>
+    <h1>Outstanding Debts: $[[total]]</h1>
     <template is="dom-repeat" items={{debts}} as="debt">
         <div>Name: [[debt.name]]</div>
         <div>Amount: $[[debt.remaining]]</div>
@@ -33,16 +33,20 @@
   <script>
     Polymer({
       is: 'my-debts',
+
       properties: {
+        total: 0,
         debts: {
           type: Array,
           notify: true,
           value: [{remaining: 20.00}]
         }
       },
-      // ready: function() {
-      //   this.debts = [{remaining: 20.00}];
-      // },
+
+      observers: [
+        '_debtsChanged(debts.splices)'
+      ],
+
       add: function(e) {
         console.log(e);
         console.log(this.debts);
@@ -50,6 +54,14 @@
           name: '',
           remaining: 0.00
         });
+      },
+
+      _debtsChanged: function(changes) {
+        //TODO: this could be optimised furrther but JS is fairly fast at math (relative to DOM manipulation)
+        //see https://www.polymer-project.org/1.0/docs/devguide/properties#array-observation for stupid efficient (horribly unreadable) version
+        this.total = this.get('debts').reduce(function(total, current) {
+          return total + (parseInt(current.remaining, 10) || 0);
+        }, 0.0);
       }
     });
   </script>

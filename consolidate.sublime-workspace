@@ -31,6 +31,40 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "src/my-debts.html",
+			"settings":
+			{
+				"buffer_size": 1657,
+				"line_ending": "Windows",
+				"name": "debts.html"
+			}
+		},
+		{
+			"file": "app.yaml",
+			"settings":
+			{
+				"buffer_size": 684,
+				"line_ending": "Windows",
+				"name": "app.yaml"
+			}
+		},
+		{
+			"file": "polymer.json",
+			"settings":
+			{
+				"buffer_size": 183,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/my-app.html",
+			"settings":
+			{
+				"buffer_size": 4276,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -137,10 +171,13 @@
 	},
 	"expanded_folders":
 	[
-		"/D/consolidate"
+		"/D/consolidate",
+		"/D/consolidate/src",
+		"/D/consolidate/test"
 	],
 	"file_history":
 	[
+		"/C/Program Files (x86)/Google/google_appengine/appcfg.py",
 		"/C/Users/GlennFrancis/work/spa/server/modules/server.js",
 		"/C/Users/GlennFrancis/work/spa/server/server.js",
 		"/C/Program Files (x86)/Nodist/bin/node_modules/npm/bin/npm-cli.js",
@@ -267,12 +304,11 @@
 		"/C/Users/GlennFrancis/Code/myob/index.html",
 		"/C/Users/GlennFrancis/Desktop/add.txt.asc",
 		"/C/Users/GlennFrancis/Code/react-blog/lib/main.js",
-		"/C/Users/GlennFrancis/Code/react-blog/index.js",
-		"/C/Users/GlennFrancis/Code/react-blog/view/index.jsx"
+		"/C/Users/GlennFrancis/Code/react-blog/index.js"
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
@@ -302,6 +338,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"app-drawer",
+			"iron-pa",
 			"time",
 			"purge",
 			"item",
@@ -427,8 +465,6 @@
 			"shoes.bat",
 			"\n	",
 			"foo",
-			"inputs",
-			"foo",
 			"inputs"
 		],
 		"highlight": true,
@@ -454,14 +490,133 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "src/my-debts.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1657,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1009,
+								1009
+							]
+						],
+						"settings":
+						{
+							"auto_name": "debts.html",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app.yaml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 684,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								454,
+								454
+							]
+						],
+						"settings":
+						{
+							"auto_name": "app.yaml",
+							"syntax": "Packages/YAML/YAML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "polymer.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 183,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								183,
+								183
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/my-app.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4276,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2414,
+								2414
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1036.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 23.0
+		"height": 30.0
 	},
 	"input":
 	{
@@ -502,7 +657,7 @@
 	"project": "consolidate.sublime-project",
 	"replace":
 	{
-		"height": 42.0
+		"height": 56.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -512,12 +667,12 @@
 		"selected_items":
 		[
 			[
-				"pm2",
-				"pm2.json"
+				"",
+				"src\\my-debts.html"
 			],
 			[
-				"",
-				"config\\credentials\\development.js"
+				"pm2",
+				"pm2.json"
 			],
 			[
 				"deve",
@@ -959,8 +1114,8 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": false,
-	"side_bar_width": 285.0,
+	"side_bar_visible": true,
+	"side_bar_width": 244.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
