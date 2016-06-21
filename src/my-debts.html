@@ -17,9 +17,9 @@
     <template is="dom-repeat" items={{debts}} as="debt">
         <div>Name: [[debt.name]]</div>
         <div>Amount: $[[debt.remaining]]</div>
-        <paper-input is="iron-input" value="{{debt.name::change}}" label="name" type="text">
+        <paper-input is="iron-input" value="{{debt.name::value-changed}}" label="name" type="text">
         </paper-input>
-        <paper-input is="iron-input" value="{{debt.remaining::change}}" label="outstanding debt (in dollars)" type="number" step="0.01" min="0.01">
+        <paper-input is="iron-input" value="{{debt.remaining::value-changed}}" label="outstanding debt (in dollars)" type="number" step="0.01" min="0.01">
           <div prefix>$&nbsp;</div>
         </paper-input>
         <button on-click="details">Details</button>
