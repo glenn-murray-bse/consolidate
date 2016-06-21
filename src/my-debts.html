@@ -44,7 +44,7 @@
       },
 
       observers: [
-        '_debtsChanged(debts.splices)'
+        'debtsChanged(debts.splices)'
       ],
 
       add: function(e) {
@@ -56,7 +56,7 @@
         });
       },
 
-      _debtsChanged: function(changes) {
+      debtsChanged: function(changes) {
         //TODO: this could be optimised furrther but JS is fairly fast at math (relative to DOM manipulation)
         //see https://www.polymer-project.org/1.0/docs/devguide/properties#array-observation for stupid efficient (horribly unreadable) version
         this.total = this.get('debts').reduce(function(total, current) {
