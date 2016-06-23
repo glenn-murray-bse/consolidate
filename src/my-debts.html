@@ -4,6 +4,7 @@
 <link rel="import" href="../bower_components/paper-card/paper-card.html">
 <link rel="import" href="../bower_components/paper-listbox/paper-listbox.html">
 <link rel="import" href="../bower_components/paper-item/paper-item.html">
+<link rel="import" href="../bower_components/paper-checkbox/paper-checkbox.html">
 <link rel="import" href="../bower_components/iron-list/iron-list.html">
 <link rel="import" href="../bower_components/iron-input/iron-input.html">
 
@@ -17,7 +18,7 @@
         padding: 16px;
       }
     </style>
-    <h1>remaining</h1>
+    <h1>Debts</h1>
     <template is="dom-repeat" items={{debts}} as="debt">
       <paper-card heading="[[debt.name]]">
         <h3>Amount: $[[debt.remaining]]</h3>
@@ -26,16 +27,19 @@
         <paper-input value="{{debt.remaining::value-changed}}" label="outstanding debt (in dollars)" type="number" step="0.01" min="0.01">
           <div prefix>$&nbsp;</div>
         </paper-input>
+        <div>[[debt.useRepayments]]</div>
+        <paper-checkbox on-change="toggleRepayments">Use Repayments</paper-checkbox>
         <paper-listbox>
           <template is="dom-repeat" items="{{debt.repayments}}" as="repayment">
             <paper-item>[[repayment]]</paper-item>
           </template>
         </paper-listbox>
-        <paper-button on-click="remove">Remove</paper-button>
+        <paper-button on-click="addRepayment">Add Repayment</paper-button>
+        <paper-button on-click="remove">Remove Debt</paper-button>
       </paper-card>
     </template>
     <div>
-      <paper-button on-click="add">Add</paper-button>
+      <paper-button on-click="add">Add New Debt</paper-button>
     </div>
   </template>
 
@@ -50,7 +54,8 @@
           notify: true,
           value: [{
             name: 'Fake Debt',
-            remaining: 20.00
+            remaining: 20.00,
+            repayments: []
           }]
         }
       },
@@ -58,6 +63,15 @@
       observers: [
         'debtsChanged(debts.*)'
       ],
+
+      toggleRepayments: function(e) {
+        e.model.debt.useRepayments = !e.model.debt.useRepayments;
+        console.log(e.model.debt.useRepayments);
+      },
+
+      addRepayment: function(e) {
+        //TODO: add repayment
+      },
 
       add: function(e) {
         console.log(e);
