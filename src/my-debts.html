@@ -1,5 +1,9 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
 <link rel="import" href="../bower_components/paper-input/paper-input.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../bower_components/paper-card/paper-card.html">
+<link rel="import" href="../bower_components/paper-listbox/paper-listbox.html">
+<link rel="import" href="../bower_components/paper-item/paper-item.html">
 <link rel="import" href="../bower_components/iron-list/iron-list.html">
 <link rel="import" href="../bower_components/iron-input/iron-input.html">
 
@@ -13,20 +17,25 @@
         padding: 16px;
       }
     </style>
-    <h1>Outstanding Debts: $[[total]]</h1>
+    <h1>remaining</h1>
     <template is="dom-repeat" items={{debts}} as="debt">
-        <div>Name: [[debt.name]]</div>
-        <div>Amount: $[[debt.remaining]]</div>
-        <paper-input is="iron-input" value="{{debt.name::value-changed}}" label="name" type="text">
+      <paper-card heading="[[debt.name]]">
+        <h3>Amount: $[[debt.remaining]]</h3>
+        <paper-input value="{{debt.name::value-changed}}" label="name" type="text">
         </paper-input>
-        <paper-input is="iron-input" value="{{debt.remaining::value-changed}}" label="outstanding debt (in dollars)" type="number" step="0.01" min="0.01">
+        <paper-input value="{{debt.remaining::value-changed}}" label="outstanding debt (in dollars)" type="number" step="0.01" min="0.01">
           <div prefix>$&nbsp;</div>
         </paper-input>
-        <button on-click="details">Details</button>
-        <button on-click="remove">Remove</button>
+        <paper-listbox>
+          <template is="dom-repeat" items="{{debt.repayments}}" as="repayment">
+            <paper-item>[[repayment]]</paper-item>
+          </template>
+        </paper-listbox>
+        <paper-button on-click="remove">Remove</paper-button>
+      </paper-card>
     </template>
     <div>
-      <button on-click="add">Add</button>
+      <paper-button on-click="add">Add</paper-button>
     </div>
   </template>
 
@@ -39,7 +48,10 @@
         debts: {
           type: Array,
           notify: true,
-          value: [{remaining: 20.00}]
+          value: [{
+            name: 'Fake Debt',
+            remaining: 20.00
+          }]
         }
       },
 
@@ -51,8 +63,9 @@
         console.log(e);
         console.log(this.debts);
         this.push('debts', {
-          name: '',
-          remaining: 0.00
+          name: 'Debt',
+          remaining: 0.00,
+          repayments: ['foo', 'bar', 'baz']
         });
       },
 
