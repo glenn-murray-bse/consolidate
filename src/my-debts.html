@@ -23,7 +23,7 @@
           <div prefix>$&nbsp;</div>
         </paper-input>
         <button on-click="details">Details</button>
-        <button on-click="order">Remove</button>
+        <button on-click="remove">Remove</button>
     </template>
     <div>
       <button on-click="add">Add</button>
@@ -44,7 +44,7 @@
       },
 
       observers: [
-        'debtsChanged(debts.splices)'
+        'debtsChanged(debts.*)'
       ],
 
       add: function(e) {
@@ -54,6 +54,12 @@
           name: '',
           remaining: 0.00
         });
+      },
+
+      remove: function(e) {
+        console.log(this.debts);
+        this.splice('debts', e.model.index, 1)
+        console.log(this.debts);
       },
 
       debtsChanged: function(changes) {
