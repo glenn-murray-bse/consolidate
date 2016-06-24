@@ -44,17 +44,20 @@
   </template>
 
   <script>
+    var initialDebt = 0.0;
+    var initialTotalDebt = 0.0;
+
     Polymer({
       is: 'my-debts',
 
       properties: {
-        total: 0,
+        total: initialTotalDebt,
         debts: {
           type: Array,
           notify: true,
           value: [{
             name: 'Fake Debt',
-            remaining: 20.00,
+            remaining: initialDebt,
             repayments: []
           }]
         }
@@ -80,6 +83,7 @@
           name: 'Debt',
           remaining: 0.00,
           repayments: ['foo', 'bar', 'baz']
+          remaining: initialDebt
         });
       },
 
@@ -93,8 +97,8 @@
         //TODO: this could be optimised furrther but JS is fairly fast at math (relative to DOM manipulation)
         //see https://www.polymer-project.org/1.0/docs/devguide/properties#array-observation for stupid efficient (horribly unreadable) version
         this.total = this.get('debts').reduce(function(total, current) {
-          return total + (parseInt(current.remaining, 10) || 0);
-        }, 0.0);
+          return total + (parseInt(current.remaining, 10) || initialDebt);
+        }, initialTotalDebt);
       }
     });
   </script>
