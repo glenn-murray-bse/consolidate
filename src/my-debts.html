@@ -77,20 +77,16 @@
       },
 
       add: function(e) {
-        console.log(e);
-        console.log(this.debts);
         this.push('debts', {
           name: 'Debt',
           remaining: 0.00,
-          repayments: ['foo', 'bar', 'baz']
+          repayments: ['foo', 'bar', 'baz'],
           remaining: initialDebt
         });
       },
 
       remove: function(e) {
-        console.log(this.debts);
         this.splice('debts', e.model.index, 1)
-        console.log(this.debts);
       },
 
       debtsChanged: function(changes) {
