@@ -9,7 +9,8 @@ module.exports = {
   ],
   output: {
     path: __dirname + '/public',
-    filename: 'application.js'
+    filename: '[name].bundle.js',
+    chunkFilename: '[id].bundle.js'
   },
   plugins: [
     new webpack.ProvidePlugin({
