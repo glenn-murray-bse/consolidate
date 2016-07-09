@@ -28,7 +28,7 @@
   <h1>{ title }</h1>
   <loans></loans>
   <script>
-    this.title = 'Consolidate'
+    this.title = 'Consolidate'; FOO; BARASASD
   </script>
   <h1>{ foo() }</h1>
   <script>

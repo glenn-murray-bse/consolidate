@@ -3,7 +3,7 @@ var webpack = require('webpack')
 module.exports = {
   entry: [
     'webpack/hot/dev-server',
-    './source/index'
+    __dirname + '/source/index'
   ],
   output: {
     path: __dirname + '/public',
@@ -17,6 +17,7 @@ module.exports = {
   module: {
     preLoaders: [{
       test: /\.tag$/,
+      include: /source/,
       exclude: /node_modules/,
       loader: 'riotjs-loader',
       query: {
@@ -24,12 +25,13 @@ module.exports = {
       }
     }, {
       test: /\.js|\.tag$/,
+      include: /source/,
       exclude: /node_modules/,
       loader: 'eslint-loader'
     }],
     loaders: [{
       test: /\.js|\.tag$/,
-      include: /app/,
+      include: /source/,
       exclude: /node_modules/,
       loader: 'babel',
       query: {
@@ -38,7 +40,7 @@ module.exports = {
     }]
   },
   devServer: {
-    contentBase: './public'
+    contentBase: __dirname + '/public'
   },
   eslint: {
     emitErrors: true,
