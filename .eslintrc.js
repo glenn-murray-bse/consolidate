@@ -28,6 +28,12 @@ module.exports = {
     ]
   },
   "globals": {
-    "riot": true
-  }
+    "riot": true,
+    "describe": true,
+    "it": true,
+    "beforeEach": true,
+    "afterEach": true,
+    "expect": true
+  },
+  "plugins": ["riot"]
 }
