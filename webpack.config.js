@@ -23,7 +23,7 @@ module.exports = {
         type: 'none'
       }
     }, {
-      test: /\.js|\.tag|\.json$/,
+      test: /\.js|\.tag$/,
       exclude: /node_modules/,
       loader: 'eslint-loader'
     }],

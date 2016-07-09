@@ -1,4 +1,3 @@
-//TODO: lint as node (not browser)
 var express = require('express'),
   swig = require('swig'),
   riot = require('riot'),
