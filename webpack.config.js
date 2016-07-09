@@ -33,7 +33,7 @@ module.exports = {
       exclude: /node_modules|server/,
       loader: 'babel',
       query: {
-        presets: 'es2015'
+        presets: 'es2015-riot'
       }
     }]
   },
