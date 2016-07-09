@@ -2,6 +2,7 @@ var webpack = require('webpack')
 
 module.exports = {
   debug: true,
+  devtool: 'inline-source-map',
   entry: [
     'webpack/hot/dev-server',
     __dirname + '/source/client/index'
