@@ -1,6 +1,7 @@
 var webpack = require('webpack')
 
 module.exports = {
+  debug: true,
   entry: [
     'webpack/hot/dev-server',
     __dirname + '/source/client/index'
@@ -22,12 +23,12 @@ module.exports = {
       query: {
         type: 'none'
       }
-    }],
-    loaders: [{
+    }, {
       test: /\.js$|\.tag$/,
       exclude: /node_modules/,
       loader: 'eslint-loader'
-    }, {
+    }],
+    loaders: [{
       test: /\.js$|\.tag$/,
       exclude: /node_modules|server/,
       loader: 'babel',
