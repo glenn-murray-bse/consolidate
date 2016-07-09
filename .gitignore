@@ -1,3 +1,5 @@
 dist/
 node_modules/
 .gitignore
+public/application.js
+npm-debug.log
