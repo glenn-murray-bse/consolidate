@@ -9,7 +9,7 @@ module.exports = {
   ],
   output: {
     path: __dirname + '/public',
-    filename: '[name].bundle.js'
+    filename: '[name].bundle.js',
     chunkFilename: '[id].bundle.js'
   },
   plugins: [
