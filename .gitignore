@@ -6,3 +6,4 @@ npm-debug.log
 .coveralls.yml
 coverage/
 build/
+public/main.bundle.js
