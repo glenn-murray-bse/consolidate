@@ -4,11 +4,8 @@ module.exports = {
   debug: true,
   devtool: 'inline-source-map',
   entry: [
-    'webpack-dev-server/client?http://localhost:8080/',
     'webpack/hot/dev-server',
-    __dirname + '/source/client/index',
-    __dirname + '/source/client/name.tag',
-    __dirname + '/source/client/application.tag'
+    __dirname + '/source/client/index'
   ],
   output: {
     path: __dirname + '/public',
