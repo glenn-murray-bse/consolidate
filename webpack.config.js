@@ -17,7 +17,7 @@ module.exports = {
       riot: 'riot'
     })
   ],
-  module: {
+  module: {   
     preLoaders: [{
       test: /\.tag$/,
       exclude: /node_modules/,
@@ -36,8 +36,8 @@ module.exports = {
       loader: 'babel',
       query: {
         presets: 'es2015-riot' // as of riot 2.5.x this may not be required
-	//NOTE: do not revert to es2015 without checking tag compilation
-	// with require, import and import from syntax i.e. npm start
+        //NOTE: do not revert to es2015 without checking tag compilation
+        // with require, import and import from syntax i.e. npm start
       }
     }]
   },

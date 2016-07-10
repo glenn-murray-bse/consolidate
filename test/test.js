@@ -1,9 +1,5 @@
-'use strict'
-//TODO: use test runner (karma/instanbul) to handle es6 & dependencies
-import { expect } from 'chai'
-
 describe('application', () => {
-  let application;
+  let application
 
   beforeEach(() => {
     application = require('../source/client/index')
