@@ -6,8 +6,9 @@
   "scripts": {
     "start": "webpack-dev-server --progress --inline --hot",
     "prepublish": "webpack --progress build/",
-    "test": "karma start",
-    "coveralls": "npm test -- --single-run",
+    "test:start": "karma start",
+    "test": "npm run test:start -- --single-run",
+    "test:watch": "npm run test:start",
     "coverage": "open coverage/*/index.html"
   },
   "author": "",
