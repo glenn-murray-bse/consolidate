@@ -20,5 +20,10 @@ module.exports = function(config) {
     webpackServer: {
       noInfo: true // silence console when running in karma
     },
+    junitReporter: {
+      outputDir: 'junit',
+      outputFile: 'test-results.xml',
+      useBrowserName: false
+    }
   })
 }
