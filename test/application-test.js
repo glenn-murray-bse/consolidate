@@ -9,12 +9,19 @@ describe('application', () => {
     expect(application).to.be.defined
   })
 
-  it('should mount', () => {
-    var html = document.createElement('application')
-    document.body.appendChild(html)
-    riot.mount('application')
-    expect(document.querySelector('application')).to.not.equal(null)
-    // expect(document.querySelector('hello > h1').textContent)
-    //   .to.be('Hello!')
+  describe('mount', () => {
+    beforeEach(() => {
+      let html = document.createElement('application')
+      document.body.appendChild(html)
+      riot.mount('application')
+    })
+
+    it('should work', () => {
+      expect(document.querySelector('application')).to.not.equal(null)
+    })
+
+    it('should render', () => {
+      expect(document.querySelector('application').textContent).to.contain('Consolidate Loans')
+    })
   })
 })
