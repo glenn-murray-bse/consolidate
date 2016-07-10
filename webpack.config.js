@@ -4,6 +4,7 @@ module.exports = {
   debug: true,
   devtool: 'inline-source-map',
   entry: [
+    'webpack-dev-server/client?http://localhost:8080/',
     'webpack/hot/dev-server',
     __dirname + '/source/client/index'
   ],
@@ -13,6 +14,7 @@ module.exports = {
     chunkFilename: '[id].bundle.js'
   },
   plugins: [
+    new webpack.HotModuleReplacementPlugin(),
     new webpack.ProvidePlugin({
       riot: 'riot'
     })
