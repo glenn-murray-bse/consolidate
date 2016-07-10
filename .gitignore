@@ -8,3 +8,4 @@ npm-debug.log
 coverage/
 build/
 public/main.bundle.js
+distribution/main.bundle.min.js

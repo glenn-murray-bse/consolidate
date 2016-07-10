@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --progress --inline --hot -c webpack.config.development.js",
-    "prepublish": "webpack --progress -c webpack.config.production.js",
-    "test": "karma start",
+    "start": "webpack-dev-server --config webpack-config-development.js --progress --inline --hot ",
+    "prepublish": "webpack --config webpack-config-production.js --progress ",
+    "test": "karma start karma-config.js",
     "test:circleci": "npm run test -- --single-run",
     "coverage": "open coverage/*/index.html"
   },

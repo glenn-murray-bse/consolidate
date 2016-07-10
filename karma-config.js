@@ -16,12 +16,12 @@ module.exports = function(config) {
       type: 'lcov', // lcov or lcovonly are required for generating lcov.info files 
       dir: 'coverage/'
     },
-    webpack: require('./webpack.config.test'),
+    webpack: require('./webpack-config-test'),
     webpackServer: {
       noInfo: true // silence console when running in karma
     },
     junitReporter: {
-      outputDir: 'junit',
+      outputDir: '../junit',
       outputFile: 'test-results.xml',
       useBrowserName: false
     }
