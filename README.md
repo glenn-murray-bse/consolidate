@@ -6,7 +6,7 @@
 
 Will reload browser on file changes
 
-*TODO* implement real hot module reloading (as opposed to full page refresh)
+*TODO* implement real hot module reloading (as opposed to full page refresh; see https://github.com/gaearon/react-transform-hmr)
 
 # Continously run tests
 
