@@ -1,5 +1,5 @@
 <name>
-  <h1>imported { name } { opts.last }, { opts.first } : { count }</h1>
+  <h1>Name { name } { opts.last }, { opts.first } : { count }</h1>
   <foo>
   <button onclick={ click }>Count</button>
   <script>
