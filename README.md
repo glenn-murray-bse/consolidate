@@ -2,6 +2,14 @@
 
 [![Build Status](https://circleci.com/gh/glenn-murray-bse/consolidate/tree/master.svg?style=shield&circle-token=e1fc557eb5a3f854a391c9425d281a7c9c86d5b8)](https://circleci.com/gh/glenn-murray-bse/consolidate/tree/master)
 
+# Run development server
+
+Will reload on file changes
+
+    npm start
+
+*TODO* implement real hot module reloading
+
 # Continously run tests
 
     npm test
