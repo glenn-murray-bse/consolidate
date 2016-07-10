@@ -21,7 +21,7 @@ module.exports = function(config) {
       noInfo: true // silence console when running in karma
     },
     junitReporter: {
-      outputDir: '../junit',
+      outputDir: 'junit',
       outputFile: 'test-results.xml',
       useBrowserName: false
     }
