@@ -13,6 +13,9 @@ module.exports = function(config) {
     //   type: 'lcov', // lcov or lcovonly are required for generating lcov.info files 
     //   dir: 'coverage/'
     // },
-    webpack: require('./webpack.config')
+    webpack: require('./webpack.config'),
+    webpackServer: {
+      noInfo: true // silence console when running in karma
+    },
   })
 }
