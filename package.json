@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server --progress --inline --hot",
     "prepublish": "webpack --progress build/",
-    "test": "karma start"
+    "test": "karma start",
+    "coverage": "open coverage/*/index.html"
   },
   "author": "",
   "license": "ISC",
