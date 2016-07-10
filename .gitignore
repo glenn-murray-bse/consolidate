@@ -4,3 +4,5 @@ node_modules/
 public/application.js
 npm-debug.log
 .coveralls.yml
+coverage/
+build/

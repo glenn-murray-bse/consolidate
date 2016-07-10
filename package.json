@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --progress --inline --hot",
     "prepublish": "webpack --progress build/",
-    "test": "istanbul cover _mocha --compilers js:babel-register && istanbul-coveralls"
+    "test": "karma start"
   },
   "author": "",
   "license": "ISC",
@@ -30,6 +30,7 @@
     "ghooks": "^1.3.2",
     "istanbul": "^0.4.4",
     "istanbul-coveralls": "^1.0.3",
+    "istanbul-instrumenter-loader": "^0.2.0",
     "karma": "^1.1.1",
     "karma-babel-preprocessor": "^6.0.1",
     "karma-chai": "^0.1.0",
