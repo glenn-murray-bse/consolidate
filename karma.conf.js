@@ -8,6 +8,9 @@ module.exports = function(config) {
       'test/index.js': ['webpack', 'sourcemap', 'coverage']
     },
     browsers: ['PhantomJS'],
+    //TODO: fix sourcemaps in riot (best but not yet implemented)
+    // or make coveralls use compiled riotjs files as source
+    // (which may require them being included in the repo undesirable)
     reporters: ['mocha', 'coverage', 'coveralls'],
     coverageReporter: {
       type: 'lcov', // lcov or lcovonly are required for generating lcov.info files 
