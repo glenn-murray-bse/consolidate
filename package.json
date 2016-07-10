@@ -7,6 +7,7 @@
     "start": "webpack-dev-server --progress --inline --hot",
     "prepublish": "webpack --progress build/",
     "test": "karma start",
+    "coveralls": "npm test -- --single-run",
     "coverage": "open coverage/*/index.html"
   },
   "author": "",

@@ -43,7 +43,7 @@ module.exports = {
     // instanbul loader may be better only included in karma config using webpack-merge
     postLoaders: [ { //delays coverage til after tests are run, fixing transpiled source coverage error
       test: /\.js$|\.tag$/,
-      exclude: /(test|node_modules|bower_components)\//,
+      exclude: /(test|node_modules|bower_components)\//, //TODO: remove test runner (webpacked) file from coverage
       loader: 'istanbul-instrumenter'
     }]
   },
