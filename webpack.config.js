@@ -9,10 +9,11 @@ module.exports = {
   ],
   output: {
     path: __dirname + '/public',
-    filename: '[name].bundle.js',
-    chunkFilename: '[id].bundle.js'
+    filename: '[name].bundle.js'
+    // chunkFilename: '[id].bundle.js'
   },
   plugins: [
+    new webpack.HotModuleReplacementPlugin(),
     new webpack.ProvidePlugin({
       riot: 'riot'
     })

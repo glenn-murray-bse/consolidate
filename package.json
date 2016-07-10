@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --progress --inline --hot",
-    "prepublish": "webpack --progress build/",
+    "prepublish": "webpack --progress",
     "test": "karma start",
     "coveralls": "npm test -- --single-run",
     "coverage": "open coverage/*/index.html"
