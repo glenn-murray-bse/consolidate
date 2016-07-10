@@ -5,8 +5,16 @@ let webpack = require('webpack')
 let config = require('./webpack-config-common')
 
 config.plugins.push(new webpack.optimize.UglifyJsPlugin({
-  exclude: /source|node_modules/,
-  sourceMap: true
+  exclude: /node_modules/,
+  beautify: false,
+  sourceMap: true, //TODO: consider disabling on production deploy
+  comments: false,
+  compress: {
+    drop_console: true
+  },
+  mangle: {
+    screw_ie8 : true
+  }
 }))
 
 config.output.path = __dirname + '/distribution'
