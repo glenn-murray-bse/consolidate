@@ -11,7 +11,7 @@ module.exports = function(config) {
     //TODO: fix sourcemaps in riot (best but not yet implemented)
     // or make coveralls use compiled riotjs files as source
     // (which may require them being included in the repo undesirable)
-    reporters: ['mocha', 'coverage', 'coveralls'],
+    reporters: ['mocha', 'coverage', 'coveralls', 'junit'],
     coverageReporter: {
       type: 'lcov', // lcov or lcovonly are required for generating lcov.info files 
       dir: 'coverage/'
