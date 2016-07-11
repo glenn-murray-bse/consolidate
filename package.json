@@ -9,7 +9,6 @@
     "start:production": "npm run predeploy && firebase serve",
     "predeploy": "webpack --config config/webpack/production.js --progress",
     "deploy": "firebase deploy --only hosting",
-    "deploy:circleci": "firebase deploy --only hosting --token '$FIREBASE_TOKEN'",
     "test": "karma start karma-config.js",
     "test:circleci": "npm run test -- --single-run",
     "coverage": "open coverage/*/index.html"
