@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --config config/webpack/development.js --progress --inline --hot ",
+    "start:development": "npm start",
+    "start:production": "npm run predeploy && firebase serve",
     "predeploy": "webpack --config config/webpack/production.js --progress",
     "deploy": "firebase deploy --only hosting",
     "deploy:circleci": "npm run deploy -- --token \"$FIREBASE_TOKEN\" --only hosting",
