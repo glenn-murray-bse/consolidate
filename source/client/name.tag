@@ -3,6 +3,8 @@
   <foo>
   <button onclick={ click }>Count</button>
   <script>
+    //NOTE: imports are hoisted to top of file
+    //  i.e. 'name' variable is also available in <foo> tag
     import { name } from './module'
 
     this.name = name
