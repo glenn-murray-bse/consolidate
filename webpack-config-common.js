@@ -1,4 +1,6 @@
-var webpack = require('webpack')
+let webpack = require('webpack')
+
+const baseDirectory =  __dirname + '/public'
 
 module.exports = {
   devtool: 'inline-source-map',
@@ -6,7 +8,7 @@ module.exports = {
     __dirname + '/source/client/index'
   ],
   output: {
-    path: __dirname + '/public', //TODO: DRY pathname
+    path: baseDirectory,
     filename: '[name].bundle.js',
     chunkFilename: '[id].bundle.js'
   },
@@ -45,6 +47,6 @@ module.exports = {
     configFile: '.eslintrc.js'
   },
   devServer: {
-    contentBase: __dirname + '/public'
+    contentBase: baseDirectory
   }
 }
