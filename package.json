@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --config config/webpack/development.js --progress --inline --hot ",
-    "prepublish": "webpack --config config/webpack/production.js --progress ",
+    "predeploy": "webpack --config config/webpack/production.js --progress",
+    "deploy": "firebase deploy",
     "test": "karma start karma-config.js",
     "test:circleci": "npm run test -- --single-run",
     "coverage": "open coverage/*/index.html"
