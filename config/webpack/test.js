@@ -1,6 +1,6 @@
 'use strict'
 
-let config = require('./webpack-config-common')
+let config = require('./common')
 
 config.debug = true
 

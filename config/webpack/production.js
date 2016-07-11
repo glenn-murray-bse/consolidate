@@ -2,7 +2,7 @@
 
 let webpack = require('webpack')
 
-let config = require('./webpack-config-common')
+let config = require('./common')
 
 config.plugins.push(new webpack.optimize.UglifyJsPlugin({
   exclude: /node_modules/,

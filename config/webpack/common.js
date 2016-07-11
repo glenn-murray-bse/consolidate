@@ -1,14 +1,16 @@
 let webpack = require('webpack')
 
-const baseDirectory =  __dirname + '/public'
+const baseDirectory =  __dirname + '/../../'
+
+const outputDirectory = baseDirectory + '/public'
 
 module.exports = {
   devtool: 'inline-source-map',
   entry: [
-    __dirname + '/source/client/index'
+    baseDirectory + '/source/client/index'
   ],
   output: {
-    path: baseDirectory,
+    path: outputDirectory,
     filename: '[name].bundle.js',
     chunkFilename: '[id].bundle.js'
   },
@@ -44,9 +46,9 @@ module.exports = {
   eslint: {
     emitErrors: true,
     failOnHint: true,
-    configFile: '.eslintrc.js'
+    configFile: baseDirectory + '.eslintrc.js'
   },
   devServer: {
-    contentBase: baseDirectory
+    contentBase: outputDirectory
   }
 }
