@@ -11,7 +11,8 @@
     "deploy": "firebase deploy --only hosting",
     "test": "karma start karma-config.js",
     "test:circleci": "npm run test -- --single-run",
-    "coverage": "open coverage/*/index.html"
+    "coverage": "open coverage/*/index.html",
+    "better:coverage": "remap-istanbul -i coverage/*/coverage-final.json -o coverage/coverage-remapped.json -t json && node coverage.js && open coverage/index.html"
   },
   "author": "Glenn Murray <glenn.murray.bse@gmail.com>",
   "license": "MIT",
@@ -47,8 +48,10 @@
     "karma-mocha": "^1.1.1",
     "karma-mocha-reporter": "^2.0.4",
     "karma-phantomjs-launcher": "^1.0.1",
+    "karma-remap-istanbul": "^0.1.1",
     "karma-riot": "^1.1.0",
     "karma-sourcemap-loader": "^0.3.7",
+    "karma-sourcemap-writer": "^0.1.2",
     "karma-webpack": "^1.7.0",
     "lodash": "^4.13.1",
     "mocha": "^2.5.3",

@@ -5,7 +5,7 @@ module.exports = function(config) {
       'test/index.js'
     ],
     preprocessors: {
-      'test/index.js': ['webpack', 'sourcemap', 'coverage']
+      'test/index.js': ['webpack', 'sourcemap', 'sourcemap-writer', 'coverage']
     },
     browsers: ['PhantomJS'],
     //TODO: fix sourcemaps in riot (best but not yet implemented)
@@ -13,7 +13,7 @@ module.exports = function(config) {
     // (which may require them being included in the repo undesirable)
     reporters: ['mocha', 'coverage', 'coveralls', 'junit'],
     coverageReporter: {
-      type: 'lcov', // lcov or lcovonly are required for generating lcov.info files 
+      type: 'json', // lcov or lcovonly are required for generating lcov.info files 
       dir: 'coverage/',
       instrumenterOptions: {
         istanbul: { noCompact: true }
