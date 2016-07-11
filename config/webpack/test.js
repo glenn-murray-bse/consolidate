@@ -4,6 +4,6 @@ let config = require('./common')
 
 config.debug = true
 
-config.devtool = 'inline-source-map'
+config.devtool = 'source-map'
 
 module.exports = config

@@ -2,10 +2,10 @@ module.exports = function(config) {
   config.set({
     frameworks: ['mocha', 'chai', 'riot'],
     files: [
-      'test/*-test.js'
+      'test/index.js'
     ],
     preprocessors: {
-      'test/*-test.js': ['webpack', 'sourcemap', 'coverage']
+      'test/index.js': ['webpack', 'coverage']
     },
     browsers: ['PhantomJS'],
     //TODO: fix sourcemaps in riot (best but not yet implemented)
@@ -14,7 +14,10 @@ module.exports = function(config) {
     reporters: ['mocha', 'coverage', 'coveralls', 'junit'],
     coverageReporter: {
       type: 'lcov', // lcov or lcovonly are required for generating lcov.info files 
-      dir: 'coverage/'
+      dir: 'coverage/',
+      instrumenterOptions: {
+        istanbul: { noCompact: true }
+      }
     },
     webpack: require('./config/webpack/test'),
     webpackServer: {

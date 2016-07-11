@@ -1,3 +1,8 @@
 {
-  "presets": [ "es2015-riot" ]
+  "presets": [ "es2015-riot" ],
+  "env": {
+    "test": {
+      "sourceMaps": "inline"
+    }
+  }
 }
