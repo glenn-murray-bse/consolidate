@@ -7,6 +7,7 @@
     "start": "webpack-dev-server --config config/webpack/development.js --progress --inline --hot ",
     "predeploy": "webpack --config config/webpack/production.js --progress",
     "deploy": "firebase deploy",
+    "deploy:circleci": "npm run deploy -- --token \"$FIREBASE_TOKEN\"",
     "test": "karma start karma-config.js",
     "test:circleci": "npm run test -- --single-run",
     "coverage": "open coverage/*/index.html"

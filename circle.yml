@@ -8,4 +8,4 @@ deployment:
   production:
     branch: master
     commands:
-      - npm run deploy
+      - npm run deploy:ci
