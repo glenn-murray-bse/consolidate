@@ -5,7 +5,7 @@ module.exports = function(config) {
       'test/index.js'
     ],
     preprocessors: {
-      'test/index.js': ['webpack', 'sourcemap', 'coverage']
+      'test/index.js': ['sourcemap', 'webpack', 'coverage']
     },
     browsers: ['PhantomJS'],
     //TODO: fix sourcemaps in riot (best but not yet implemented)
