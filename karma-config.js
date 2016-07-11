@@ -2,10 +2,10 @@ module.exports = function(config) {
   config.set({
     frameworks: ['mocha', 'chai', 'riot'],
     files: [
-      'test/index.js'
+      'test/*-test.js'
     ],
     preprocessors: {
-      'test/index.js': ['sourcemap', 'webpack', 'coverage']
+      'test/*-test.js': ['webpack', 'sourcemap', 'coverage']
     },
     browsers: ['PhantomJS'],
     //TODO: fix sourcemaps in riot (best but not yet implemented)

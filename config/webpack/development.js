@@ -6,8 +6,6 @@ let config = require('./common')
 
 config.debug = true
 
-config.devtool = 'inline-source-map'
-
 config.entry.unshift('webpack/hot/dev-server')
 
 config.plugins.unshift(new webpack.HotModuleReplacementPlugin())
