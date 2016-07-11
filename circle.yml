@@ -4,3 +4,8 @@ machine:
 test:
   post:
     - cp junit/test-results.xml $CIRCLE_TEST_REPORTS 
+deployment:
+  production:
+    branch: master
+    commands:
+      - npm run deploy
