@@ -1,7 +1,7 @@
 {
   "name": "consolidate",
   "version": "1.0.0",
-  "description": "",
+  "description": "Consolidation Loan Calculator",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --config config/webpack/development.js --progress --inline --hot ",
@@ -9,18 +9,17 @@
     "start:production": "npm run predeploy && firebase serve",
     "predeploy": "webpack --config config/webpack/production.js --progress",
     "deploy": "firebase deploy --only hosting",
-    "deploy:circleci": "npm run deploy -- --token \"$FIREBASE_TOKEN\" --only hosting",
+    "deploy:circleci": "firebase deploy --only hosting --token \"$FIREBASE_TOKEN\"",
     "test": "karma start karma-config.js",
     "test:circleci": "npm run test -- --single-run",
     "coverage": "open coverage/*/index.html"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Glenn Murray <glenn.murray.bse@gmail.com>",
+  "license": "MIT",
   "dependencies": {
     "express": "^4.14.0",
     "riot": "^2.5.0",
-    "riot-mui": "0.0.17",
-    "swig": "^1.4.2"
+    "riot-mui": "0.0.17"
   },
   "devDependencies": {
     "babel-core": "^6.10.4",
