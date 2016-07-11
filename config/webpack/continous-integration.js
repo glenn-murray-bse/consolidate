@@ -1,7 +1,5 @@
 'use strict'
 
-var webpack = require('webpack')
-
 let config = require('./common')
 
 // instanbul loader may be better only included in karma config using webpack-merge
