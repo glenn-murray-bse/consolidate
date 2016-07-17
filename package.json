@@ -4,7 +4,7 @@
   "description": "Consolidation Loan Calculator",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --config config/webpack/development.js --progress --inline --hot ",
+    "start": "webpack-dev-server --config config/webpack/development.js --progress --inline --hot --color --debug",
     "start:development": "npm start",
     "start:production": "npm run predeploy && firebase serve",
     "predeploy": "webpack --config config/webpack/production.js --progress",

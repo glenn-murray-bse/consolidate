@@ -1,13 +1,15 @@
-let webpack = require('webpack')
+'use strict'
+
+var webpack = require('webpack')
 
 const baseDirectory =  __dirname + '/../../'
 
-const outputDirectory = baseDirectory + '/public'
+const outputDirectory = baseDirectory + 'public'
 
 module.exports = {
   devtool: 'inline-source-map',
   entry: [
-    baseDirectory + '/source/client/index'
+    baseDirectory + 'source'
   ],
   output: {
     path: outputDirectory,
@@ -29,7 +31,7 @@ module.exports = {
       }
     }, {
       test: /\.js$|\.tag$/,
-      exclude: /node_modules/,
+      exclude: /node_modules|vendor/,
       loader: 'eslint-loader'
     }],
     loaders: [{
@@ -37,9 +39,7 @@ module.exports = {
       exclude: /node_modules|server/,
       loader: 'babel',
       query: {
-        presets: 'es2015-riot' // as of riot 2.5.x this may not be required
-        //NOTE: do not revert to es2015 without checking tag compilation
-        // with require, import and import from syntax i.e. npm start
+        presets: 'es2015-riot'
       }
     }]
   },
@@ -49,6 +49,7 @@ module.exports = {
     configFile: baseDirectory + '.eslintrc.js'
   },
   devServer: {
-    contentBase: outputDirectory
+    contentBase: outputDirectory,
+    compress: true
   }
 }
