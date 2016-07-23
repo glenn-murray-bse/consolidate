@@ -6,8 +6,7 @@ module.exports = {
     "node": true
   },
   "extends": [
-    "eslint:all",
-    "riot:recommended"
+    "eslint:all"
   ],
   "parserOptions": {
     "sourceType": "module"
