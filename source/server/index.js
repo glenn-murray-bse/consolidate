@@ -17,3 +17,9 @@ var ref = db.ref()
 ref.on('value', function(data) {
   console.log('data', data.val())
 })
+
+var uid = 'this-server-uid'
+var additionalClaims = {
+  premiumAccount: true
+}
+var token = firebase.auth().createCustomToken(uid, additionalClaims)
