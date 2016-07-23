@@ -1,27 +1,19 @@
-var express = require('express'),
-  swig = require('swig'),
-  riot = require('riot'),
-  application = require('./application.tag'),
-  app = express()
+var firebase = require('firebase')
 
-app.engine('html', swig.renderFile)
+let config = require('../../config/firebase/consolidate-500d07e869fd')
 
-app.set('view engine', 'html')
-app.set('views', __dirname + '/')
-
-app.use(express.static(__dirname + '/'))
-
-app.get('/', (req, res) => {
-  var mode = 'Pre-Rendered'
-  var tagContent = riot.render(application, {
-    mode
-  })
-  res.render('index', {
-    tagContent,
-    mode
-  })
+firebase.initializeApp({
+  serviceAccount: {
+    projectId: config.project_id,
+    clientEmail: config.client_email,
+    privateKey: config.private_key
+  },
+  databaseURL: 'https://consolidate-f22bb.firebaseio.com'
 })
 
-app.listen(3000, () => {
-  console.log('server listening on port 3000')
+// The app only has access as defined in the Security Rules
+var db = firebase.database()
+var ref = db.ref()
+ref.on('value', function(data) {
+  console.log('data', data.val())
 })

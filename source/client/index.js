@@ -1,4 +1,4 @@
-import './name.tag'
-import './application.tag'
+require('./name.tag')
+require('./application.tag')
 
 riot.mount('*')
