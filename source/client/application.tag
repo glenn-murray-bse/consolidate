@@ -2,7 +2,7 @@
   <h3>Loan { name }</h3>
   <input type="text" placeholder="Name" value={ loan.title } onchange={ refresh } />
   <input type="number" value={ loan.amount } onchange={ refresh } />
-  <script type="es6">
+  <script>
     this.loan = this.opts.loan
 
     this.refresh = () => {
@@ -15,7 +15,7 @@
   <h2>{ title }</h2>
   <button onclick={ add }>Add</button>
   <loan each={ loan in loans } loan={ loan }></loan>
-  <script type="es6">
+  <script>
     this.add = () => {
       this.loans.unshift({})
     }
@@ -27,11 +27,11 @@
 <application>
   <h1>{ title }</h1>
   <loans></loans>
-  <script type="es6">
+  <script>
     this.title = 'Consolidate'
   </script>
   <h1>{ foo() }</h1>
-  <script type="es6">
+  <script>
     this.foo = () => {
       return 'bar'
     }
@@ -69,7 +69,7 @@
     <button onclick={ add }>Add New Debt</button>
   </div>
 
-  <script type="es6">
+  <script>
     //TODO: use flux (riot-control/flux) instead
     this.updateOutsanding = e => {
       this.remaining = parseFloat(e.target.value)

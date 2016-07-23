@@ -5,6 +5,7 @@ const baseDirectory =  __dirname + '/../../'
 const outputDirectory = baseDirectory + '/public'
 
 module.exports = {
+  cache: true,
   devtool: 'inline-source-map',
   entry: [
     baseDirectory + '/source/client/index'
@@ -17,13 +18,14 @@ module.exports = {
   plugins: [
     new webpack.ProvidePlugin({
       riot: 'riot'
-    })
+    }),
+    new webpack.optimize.CommonsChunkPlugin(/* chunkName= */'main', /* filename= */'main.bundle.js'),
   ],
   module: {   
     preLoaders: [{
       test: /\.tag$/,
       exclude: /node_modules/,
-      loader: 'riotjs-loader',
+      loader: 'riotjs',
       query: {
         type: 'none'
       }
@@ -37,11 +39,12 @@ module.exports = {
       exclude: /node_modules|server/,
       loader: 'babel',
       query: {
-        presets: 'es2015-riot' // as of riot 2.5.x this may not be required
-        //NOTE: do not revert to es2015 without checking tag compilation
-        // with require, import and import from syntax i.e. npm start
+        presets: 'es2015-riot'
       }
     }]
+  },
+  babel: {
+    presets: ['es2015'],
   },
   eslint: {
     emitErrors: true,

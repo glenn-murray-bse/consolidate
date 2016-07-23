@@ -1,4 +1,7 @@
 module.exports = {
+  "plugins": [
+    "riot"
+  ],
   "env": {
     "browser": true,
     "commonjs": true,
@@ -55,6 +58,5 @@ module.exports = {
     "beforeEach": true,
     "afterEach": true,
     "expect": true
-  },
-  "plugins": ["riot"]
+  }
 }

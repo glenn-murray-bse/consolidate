@@ -1,4 +1,4 @@
-<name>
+n<name>
   <h1>Name { name } { opts.last }, { opts.first } : { count }</h1>
   <foo>
   <button onclick={ click }>Count</button>
