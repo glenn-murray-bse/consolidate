@@ -27,6 +27,16 @@ module.exports = {
     "semi": [
       2,
       "never"
+    ],
+    "quote-props": [
+      "error",
+      "consistent-as-needed"
+    ],
+    "object-curly-newline": [
+      "error", {
+        "ObjectExpression": "always",
+        "ObjectPattern": { "multiline": true }
+      }
     ]
   },
   "globals": {
