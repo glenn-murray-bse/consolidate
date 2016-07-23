@@ -1,17 +1,14 @@
+const loan = require('../source/client/application.tag')
+
 describe('loan', () => {
-  let loan
-
-  beforeEach(() => {
-    loan = require('../source/client/application.tag')
-  })
-
   it('should exist', () => {
-    expect(loan).to.be.defined
+    expect(loan).to.be.defined()
   })
 
   describe('mount', () => {
     beforeEach(() => {
-      let html = document.createElement('loan')
+      const html = document.createElement('loan')
+
       document.body.appendChild(html)
       riot.mount('loan')
     })

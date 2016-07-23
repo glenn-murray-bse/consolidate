@@ -1,17 +1,14 @@
+const application = require('../source/client/application.tag')
+
 describe('application', () => {
-  let application
-
-  beforeEach(() => {
-    application = require('../source/client/application.tag')
-  })
-
   it('should exist', () => {
-    expect(application).to.be.defined
+    expect(application).to.be.defined()
   })
 
   describe('mount', () => {
     beforeEach(() => {
-      let html = document.createElement('application')
+      const html = document.createElement('application')
+
       document.body.appendChild(html)
       riot.mount('application')
     })
@@ -21,7 +18,9 @@ describe('application', () => {
     })
 
     it('should render', () => {
-      expect(document.querySelector('application').textContent).to.contain('Consolidate Loans')
+      const element = document.querySelector('application')
+
+      expect(element.textContent).to.contain('Consolidate Loans')
     })
   })
 })

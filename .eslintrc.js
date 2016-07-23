@@ -39,6 +39,13 @@ module.exports = {
           "multiline": true
         }
       }
+    ],
+    "padded-blocks": [
+      "error", {
+        "blocks": "never",
+        "classes": "never",
+        "switches": "never"
+      }
     ]
   },
   "globals": {

@@ -1,17 +1,14 @@
+const name = require('../source/client/name.tag')
+
 describe('name', () => {
-  let name
-
-  beforeEach(() => {
-    name = require('../source/client/name.tag')
-  })
-
   it('should exist', () => {
-    expect(name).to.be.defined
+    expect(name).to.be.defined()
   })
 
   describe('mount', () => {
     beforeEach(() => {
-      let html = document.createElement('name')
+      const html = document.createElement('name')
+
       document.body.appendChild(html)
       riot.mount('name')
     })
