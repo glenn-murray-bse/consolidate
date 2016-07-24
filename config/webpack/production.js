@@ -9,7 +9,7 @@ const baseDirectory =  __dirname + '/../../' //TODO: DRY common variables
 config.plugins.push(new webpack.optimize.UglifyJsPlugin({
   exclude: /node_modules/,
   beautify: false,
-  sourceMap: true, //TODO: consider disabling on production deploy
+  sourceMap: false,
   comments: false,
   compress: {
     drop_console: true
@@ -22,5 +22,7 @@ config.plugins.push(new webpack.optimize.UglifyJsPlugin({
 config.output.path = baseDirectory + 'distribution'
 
 config.output.filename = '[name].bundle.min.js'
+
+config.devtool = 'source-map'
 
 module.exports = config

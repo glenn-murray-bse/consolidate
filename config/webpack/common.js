@@ -1,14 +1,16 @@
-let webpack = require('webpack')
+'use strict'
+
+var webpack = require('webpack')
 
 const baseDirectory =  __dirname + '/../../'
 
-const outputDirectory = baseDirectory + '/public'
+const outputDirectory = baseDirectory + 'public'
 
 module.exports = {
   cache: true,
   devtool: 'inline-source-map',
   entry: [
-    baseDirectory + '/source/client/index'
+    baseDirectory + 'source'
   ],
   output: {
     path: outputDirectory,
@@ -31,7 +33,7 @@ module.exports = {
       }
     }, {
       test: /\.js$|\.tag$/,
-      exclude: /node_modules/,
+      exclude: /node_modules|vendor/,
       loader: 'eslint-loader'
     }],
     loaders: [{
@@ -52,6 +54,7 @@ module.exports = {
     configFile: baseDirectory + '.eslintrc.js'
   },
   devServer: {
-    contentBase: outputDirectory
+    contentBase: outputDirectory,
+    compress: true
   }
 }
