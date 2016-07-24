@@ -56,6 +56,10 @@ module.exports = {
         "let": "never",
         "const": "never"
       }
+    ],
+    "arrow-parens": [
+      "error",
+      "as-needed"
     ]
   },
   "globals": {

@@ -1,8 +1,5 @@
-'use strict'
-
-var webpack = require('webpack')
-
-let config = require('./common')
+const webpack = require('webpack')
+const config = require('./common')
 
 config.debug = true
 

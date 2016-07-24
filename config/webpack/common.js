@@ -1,12 +1,12 @@
 const webpack = require('webpack')
-const baseDirectory = `${__dirname}/../../`
-const outputDirectory = `${baseDirectory}public`
+const constants = require('../constants')
+const outputDirectory = `${constants.baseDirectory}public`
 
 module.exports = {
   cache: true,
   devtool: 'inline-source-map',
   entry: [
-    `${baseDirectory}source/client`
+    `${constants.baseDirectory}source/client`
   ],
   output: {
     path: outputDirectory,
@@ -16,8 +16,7 @@ module.exports = {
   plugins: [
     new webpack.ProvidePlugin({
       riot: 'riot'
-    }),
-    new webpack.optimize.CommonsChunkPlugin('main', 'main.bundle.js')
+    })
   ],
   module: {
     preLoaders: [{
@@ -47,7 +46,7 @@ module.exports = {
   eslint: {
     emitErrors: true,
     failOnHint: true,
-    configFile: `${baseDirectory}.eslintrc.js`
+    configFile: `${constants.baseDirectory}.eslintrc.js`
   },
   devServer: {
     contentBase: outputDirectory,

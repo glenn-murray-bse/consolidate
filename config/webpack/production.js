@@ -1,10 +1,6 @@
-'use strict'
-
-let webpack = require('webpack')
-
-let config = require('./common')
-
-const baseDirectory =  __dirname + '/../../' //TODO: DRY common variables
+const webpack = require('webpack')
+const config = require('./common')
+const constants = require('../constants')
 
 config.plugins.push(new webpack.optimize.UglifyJsPlugin({
   exclude: /node_modules/,
@@ -12,14 +8,14 @@ config.plugins.push(new webpack.optimize.UglifyJsPlugin({
   sourceMap: false,
   comments: false,
   compress: {
-    drop_console: true
+    drop_console: true // eslint-disable-line camelcase
   },
   mangle: {
-    screw_ie8 : true
+    screw_ie8: true // eslint-disable-line camelcase
   }
 }))
 
-config.output.path = baseDirectory + 'distribution'
+config.output.path = `${constants.baseDirectory}distribution`
 
 config.output.filename = '[name].bundle.min.js'
 

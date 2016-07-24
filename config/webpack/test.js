@@ -1,6 +1,4 @@
-'use strict'
-
-let config = require('./common')
+const config = require('./common')
 
 config.debug = true
 

@@ -1,10 +1,13 @@
-module.exports = function(config) {
+const webpackConfig = require('./config/webpack/test')
+
+module.exports = config => {
   config.set({
     basePath: '',
     autoWatch: true,
     frameworks: [
       'mocha',
       'chai',
+      'dirty-chai',
       'riot'
     ],
     files: [
@@ -24,24 +27,26 @@ module.exports = function(config) {
     },
     concurrency: 2,
     browsers: ['PhantomJS'],
-    //TODO: fix sourcemaps in riot (best but not yet implemented)
+    // TODO: fix sourcemaps in riot (best but not yet implemented)
     // or make coveralls use compiled riotjs files as source
     // (which may require them being included in the repo undesirable)
     reporters: ['progress', 'coverage', 'coveralls', 'junit'],
     coverageReporter: {
       dir: 'coverage/',
       reporters: [{
-        type: 'json', // lcov or lcovonly are required for generating lcov.info files 
-        dir: 'json',
+        type: 'json',
+        dir: 'json'
       }, {
         type: 'lcov',
         subdir: 'lcov'
       }],
       instrumenterOptions: {
-        istanbul: { noCompact: true }
+        istanbul: {
+          noCompact: true
+        }
       }
     },
-    webpack: require('./config/webpack/test'),
+    webpack: webpackConfig,
     webpackServer: {
       noInfo: true // silence console when running in karma
     },
