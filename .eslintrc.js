@@ -49,6 +49,13 @@ module.exports = {
         "classes": "never",
         "switches": "never"
       }
+    ],
+    "one-var": [
+      "error", {
+        "var": "never",
+        "let": "never",
+        "const": "never"
+      }
     ]
   },
   "globals": {

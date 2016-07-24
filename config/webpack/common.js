@@ -1,16 +1,12 @@
-'use strict'
-
-var webpack = require('webpack')
-
-const baseDirectory =  __dirname + '/../../'
-
-const outputDirectory = baseDirectory + 'public'
+const webpack = require('webpack')
+const baseDirectory = `${__dirname}/../../`
+const outputDirectory = `${baseDirectory}public`
 
 module.exports = {
   cache: true,
   devtool: 'inline-source-map',
   entry: [
-    baseDirectory + 'source'
+    `${baseDirectory}source/client`
   ],
   output: {
     path: outputDirectory,
@@ -21,9 +17,9 @@ module.exports = {
     new webpack.ProvidePlugin({
       riot: 'riot'
     }),
-    new webpack.optimize.CommonsChunkPlugin(/* chunkName= */'main', /* filename= */'main.bundle.js'),
+    new webpack.optimize.CommonsChunkPlugin('main', 'main.bundle.js')
   ],
-  module: {   
+  module: {
     preLoaders: [{
       test: /\.tag$/,
       exclude: /node_modules/,
@@ -46,12 +42,12 @@ module.exports = {
     }]
   },
   babel: {
-    presets: ['es2015'],
+    presets: ['es2015']
   },
   eslint: {
     emitErrors: true,
     failOnHint: true,
-    configFile: baseDirectory + '.eslintrc.js'
+    configFile: `${baseDirectory}.eslintrc.js`
   },
   devServer: {
     contentBase: outputDirectory,
