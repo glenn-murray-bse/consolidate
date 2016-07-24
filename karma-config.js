@@ -1,5 +1,10 @@
 const webpackConfig = require('./config/webpack/test')
 
+const fs = require('fs')
+
+const httpsKey = fs.readFileSync('./.ssl/localhost.key')
+const httpsCert = fs.readFileSync('./.ssl/localhost.crt')
+
 module.exports = config => {
   config.set({
     basePath: '',
@@ -7,6 +12,7 @@ module.exports = config => {
     frameworks: [
       'mocha',
       'dirty-chai',
+      'sinon-chai',
       'riot'
     ],
     files: [
@@ -24,8 +30,22 @@ module.exports = config => {
         'coverage'
       ]
     },
-    concurrency: 2,
+    concurrency: 1,
+    protocol: 'https:',
+    httpsServerOptions: {
+        key: httpsKey,
+        cert: httpsCert
+    },
     browsers: ['PhantomJS'],
+    phantomjsLauncher: {
+      exitOnResourceError: true,
+      base: 'PhantomJS',
+      flags: [
+        '--web-security=false',
+        '--load-images=true',
+        '--ignore-ssl-errors=true'
+      ]
+    },
     // TODO: fix sourcemaps in riot (best but not yet implemented)
     // or make coveralls use compiled riotjs files as source
     // (which may require them being included in the repo undesirable)
