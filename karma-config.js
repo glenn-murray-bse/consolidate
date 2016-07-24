@@ -6,7 +6,6 @@ module.exports = config => {
     autoWatch: true,
     frameworks: [
       'mocha',
-      'chai',
       'dirty-chai',
       'riot'
     ],
