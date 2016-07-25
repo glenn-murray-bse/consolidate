@@ -16,15 +16,15 @@ module.exports = config => {
       'riot'
     ],
     files: [
-      'test/index.js',
+      'test/application-test.js',
       {
-        pattern: 'source/client/*.tag',
+        pattern: 'source/client/index.js',
         served: true,
         included: false
       }
     ],
     preprocessors: {
-      'test/index.js': [
+      'test/*.js': [
         'webpack',
         'sourcemap',
         'coverage'
@@ -33,8 +33,8 @@ module.exports = config => {
     concurrency: 1,
     protocol: 'https:',
     httpsServerOptions: {
-        key: httpsKey,
-        cert: httpsCert
+      key: httpsKey,
+      cert: httpsCert
     },
     browsers: ['PhantomJS'],
     phantomjsLauncher: {

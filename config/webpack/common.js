@@ -22,7 +22,7 @@ module.exports = {
     preLoaders: [{
       test: /\.tag$/,
       exclude: /node_modules/,
-      loader: 'riotjs',
+      loader: 'riotjs-loader',
       query: {
         type: 'none'
       }
@@ -40,16 +40,12 @@ module.exports = {
       }
     }]
   },
-  babel: {
-    presets: ['es2015']
-  },
   eslint: {
     emitErrors: true,
     failOnHint: true,
     configFile: `${constants.baseDirectory}.eslintrc.js`
   },
   devServer: {
-    contentBase: outputDirectory,
-    compress: true
+    contentBase: outputDirectory
   }
 }

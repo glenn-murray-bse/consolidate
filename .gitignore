@@ -10,3 +10,4 @@ build/
 public/main.bundle.js
 distribution/main.bundle.min.js
 config/firebase/
+.ssl/

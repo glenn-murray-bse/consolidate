@@ -27,7 +27,8 @@
     "untested:dist": "webpack -p -d",
     "untested:viewdist": "light-server -s . -p 7000",
     "untested:lint": "eslint --ext .js,.es6,.html src/*",
-    "genereate:certificates": "mkdir -p .ssl && openssl req -new -newkey rsa:2048 -sha1 -days 365 -nodes -x509 -keyout .ssl/localhost.key -out .ssl/localhost.crt -subj \"/C=AU/ST=Victoria/L=Melbourne/O=Sample Company/OU=IT Department/CN=example.com\""
+    "pretest": "npm run generate:certificates",
+    "generate:certificates": "mkdir -p .ssl && openssl req -new -newkey rsa:2048 -sha1 -days 365 -nodes -x509 -keyout .ssl/localhost.key -out .ssl/localhost.crt -subj \"/C=AU/ST=Victoria/L=Melbourne/O=Sample Company/OU=IT Department/CN=example.com\""
   },
   "dependencies": {
     "firebase": "^3.2.0",
