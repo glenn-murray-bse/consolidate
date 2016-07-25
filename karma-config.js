@@ -72,7 +72,7 @@ module.exports = config => {
     },
     webpack: webpackConfig,
     webpackServer: {
-      noInfo: true // silence console when running in karma
+      noInfo: true
     },
     junitReporter: {
       outputDir: 'junit',
