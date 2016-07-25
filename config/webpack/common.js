@@ -6,7 +6,7 @@ module.exports = {
   cache: true,
   devtool: 'inline-source-map',
   entry: [
-    `${constants.baseDirectory}source/client`
+    `${constants.baseDirectory}source/client/index`
   ],
   output: {
     path: outputDirectory,

@@ -16,15 +16,20 @@ module.exports = config => {
       'riot'
     ],
     files: [
-      'test/application-test.js',
+      'test/index.js',
       {
-        pattern: 'source/client/index.js',
+        pattern: 'source/client/*.tag',
+        served: true,
+        included: false
+      },
+      {
+        pattern: 'source/client/*.js',
         served: true,
         included: false
       }
     ],
     preprocessors: {
-      'test/*.js': [
+      'test/index.js': [
         'webpack',
         'sourcemap',
         'coverage'
@@ -49,7 +54,7 @@ module.exports = config => {
     // TODO: fix sourcemaps in riot (best but not yet implemented)
     // or make coveralls use compiled riotjs files as source
     // (which may require them being included in the repo undesirable)
-    reporters: ['progress', 'coverage', 'coveralls', 'junit'],
+    reporters: ['mocha', 'progress', 'coverage', 'coveralls', 'junit'],
     coverageReporter: {
       dir: 'coverage/',
       reporters: [{
