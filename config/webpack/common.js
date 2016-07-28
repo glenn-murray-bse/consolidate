@@ -3,7 +3,6 @@ const constants = require('../constants')
 const outputDirectory = `${constants.baseDirectory}public`
 
 module.exports = {
-  cache: true,
   devtool: 'inline-source-map',
   entry: [
     `${constants.baseDirectory}source/client/index`

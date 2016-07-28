@@ -7,8 +7,7 @@ const httpsCert = fs.readFileSync('./.ssl/localhost.crt')
 
 module.exports = config => {
   config.set({
-    basePath: '',
-    autoWatch: true,
+    autoWatch: false,
     frameworks: [
       'mocha',
       'dirty-chai',
@@ -72,7 +71,7 @@ module.exports = config => {
     },
     webpack: webpackConfig,
     webpackServer: {
-      noInfo: true
+      noInfo: false
     },
     junitReporter: {
       outputDir: 'junit',
